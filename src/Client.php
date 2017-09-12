@@ -48,7 +48,7 @@ class Client extends BaseModel
      */
     public function authCodes()
     {
-        return $this->hasMany(AuthCode::class);
+        return $this->hasMany(AuthCode::class, 'client_id');
     }
 
     /**
@@ -58,7 +58,7 @@ class Client extends BaseModel
      */
     public function tokens()
     {
-        return $this->hasMany(Token::class);
+        return $this->hasMany(Token::class, 'client_id');
     }
 
     /**
