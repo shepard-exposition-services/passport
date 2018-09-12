@@ -3,8 +3,9 @@
 namespace Laravel\Passport;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Token extends Model
+class Token extends BaseModel
 {
     /**
      * The database table used by the model.

@@ -3,8 +3,9 @@
 namespace Laravel\Passport;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class PersonalAccessClient extends Model
+class PersonalAccessClient extends BaseModel
 {
     /**
      * The database table used by the model.
